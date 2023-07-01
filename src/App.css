@@ -1,0 +1,9 @@
+.app-container {
+    display: flex;
+    /* background-color: var(--dark); */
+}
+
+.content-container {
+    flex-grow: 1;
+    padding-left: 300px;
+}
