@@ -2,7 +2,7 @@ import './CustomButton.css';
 
 const CustomButton = () => {
     return (
-        <a href="/" className='button'>Custom Button</a>
+        <button className='button'>Custom Button</button>
     );
 }
 

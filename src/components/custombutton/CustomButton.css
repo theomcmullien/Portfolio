@@ -1,9 +1,12 @@
 .button {
+    --border-width: 2px;
+    --distance: -15px;
+    background: none;
     text-decoration: none;
-    font-size: 25px;
-    color: #1fe8b6;
-    padding: 20px 50px;
-    border: 3px solid #1fe8b6;
+    font-size: 20px;
+    color: var(--light);
+    padding: 20px 40px;
+    border: var(--border-width) solid var(--light);
     position: relative;
 }
 
@@ -17,15 +20,15 @@
 }
 
 .button::before {
-    top: -15px;
-    left: -15px;
-    border-width: 3px 0 0 3px;
+    top: var(--distance);
+    left: var(--distance);
+    border-width: var(--border-width) 0 0 var(--border-width);
 }
 
 .button::after {
-    bottom: -15px;
-    right: -15px;
-    border-width: 0 3px 3px 0;
+    bottom: var(--distance);
+    right: var(--distance);
+    border-width: 0 var(--border-width) var(--border-width) 0;
 }
 
 .button:hover::before, .button:hover::after {
