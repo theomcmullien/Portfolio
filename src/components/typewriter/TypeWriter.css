@@ -1,6 +1,6 @@
 @keyframes blink {
     0% {
-        border-right: 0.08em solid #fff;
+        border-right: 0.08em solid var(--light);
     }
 
     50% {
@@ -8,12 +8,12 @@
     }
 
     100% {
-        border-right: 0.08em solid #fff;
+        border-right: 0.08em solid var(--light);
     }
 }
 
 .wrap {
-    border-right: 0.08em solid #fff;
+    border-right: 0.08em solid var(--light);
     animation: blink 1s infinite;
     color: var(--primary);
 }
@@ -21,5 +21,6 @@
 .text {
     font-size: 40px;
     font-weight: bold;
+    font-style: italic;
     font-family: 'Amaranth', 'Montserrat', sans-serif;
 }

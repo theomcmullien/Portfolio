@@ -10,17 +10,14 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 10px 5px rgba(65, 105, 225, 0.1);
-}
-
-.font-amaranth {
-  font-family: 'Amaranth', 'Montserrat', sans-serif;
+    /* box-shadow: 0 0 10px 5px rgba(65, 105, 225, 0.1); */
+    /* border-right: 1px solid var(--light); */
 }
 
 nav ul {
   list-style-type: none;
   align-self: flex-start;
-  margin: 15vh 0 0 0;
+  margin: 12vh 0 0 0;
   padding: 0;
 }
 
@@ -30,6 +27,11 @@ nav li {
 
 .nav-header {
   margin-top: 30px;
+}
+
+.name {
+  font-family: 'Amaranth', 'Montserrat', sans-serif;
+  font-size: 30px;
 }
 
 .nav-footer {
@@ -72,4 +74,19 @@ nav i {
 nav p {
   padding-left: 12px;
   display: inline;
+}
+
+.slide-right {
+  animation: slide-right 1s;
+}
+
+@keyframes slide-right {
+  0% {
+      transform: translateX(-150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
 }

@@ -1,4 +1,19 @@
 .about-container {
     background-color: green;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 1s;
+}
+
+.about-animated {
+    opacity: 1;
+    transform: translateX(0);
 }

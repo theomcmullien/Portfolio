@@ -26,10 +26,10 @@ const SideNavBar = () => {
 
     return (
         <nav>
-            <div className='nav-header'>
-                <h4>Theo McMullien</h4>
+            <div className='nav-header slide-right'>
+                <span className='name'>Theo McMullien</span>
             </div>
-            <ul>
+            <ul className='slide-right'>
                 <li>
                     <Link className={activeItem === 'section1' ? 'link active' : 'link'} to="home" smooth={true} duration={0}>
                         <i className="fa-solid fa-house"></i>
@@ -67,7 +67,7 @@ const SideNavBar = () => {
                     </Link>
                 </li>
             </ul>
-            <div className='nav-footer pb-3'>
+            <div className='nav-footer slide-right pb-3'>
                 <h6 className='mb-3'>&copy; Copyright 2023</h6>
                 <h6 className='fst-italic'>Designed by Theo McMullien</h6>
             </div>

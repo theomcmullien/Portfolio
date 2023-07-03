@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='app-container'>
       <SideNavBar />
-      <div className='text-black content-container'>
+      <div className='content-container'>
         <Element id='section1' name="home" className="section">
           <Home />
         </Element>
