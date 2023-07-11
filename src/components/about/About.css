@@ -1,5 +1,6 @@
 .about-container {
-    background-color: green;
+    /* background-color: green; */
+    /* background-image: url('/src/images/patterns/black_scales.png'); */
     height: 100vh;
     display: flex;
     flex-direction: column;

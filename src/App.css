@@ -1,10 +1,17 @@
 .app-container {
     display: flex;
-    /* background-color: var(--dark); */
 }
 
 .content-container {
     flex-grow: 1;
     padding-left: 300px;
     color: var(--light);
+    background-image: url('/src/images/home_dark.png');
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.sub-content-container {
+    background-image: url('/src/images/patterns/diamonds.png');
+    background-position: center 100vh;
 }

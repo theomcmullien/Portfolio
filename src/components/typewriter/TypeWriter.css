@@ -13,9 +13,11 @@
 }
 
 .wrap {
+    background: linear-gradient(to right, var(--primary), var(--primary-red));
+    background-clip: text;
+    color: transparent;
     border-right: 0.08em solid var(--light);
     animation: blink 1s infinite;
-    color: var(--primary);
 }
 
 .text {

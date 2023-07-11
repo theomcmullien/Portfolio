@@ -1,13 +1,14 @@
 .home-bg-container {
-    background-image: url('../../images/home_dark.png');
+    /* background-image: url('../../images/home.png'); */
+    /* background-color: var(--dark); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
-    background-color: var(--dark);
     height: 100vh;
     color: var(--light);
     display: flex;
     justify-content: center;
+    /* box-shadow: 0 0 200px 30px rgba(var(--primary-rgb), 0.15); */
 }
 
 .home-container {
