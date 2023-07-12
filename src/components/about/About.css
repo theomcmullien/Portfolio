@@ -1,20 +1,55 @@
 .about-container {
-    /* background-color: green; */
-    /* background-image: url('/src/images/patterns/black_scales.png'); */
-    height: 100vh;
+    /* background-color: var(--light); */
+    /* background-image: url('/src/images/patterns/diamonds.png'); */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding: 100px;
 }
 
 .about-section {
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    border-radius: 100px;
+    padding: 75px 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.about-slide-left {
+    transform: translateX(400px);
     opacity: 0;
-    transform: translateX(200px);
     transition: all 1s;
 }
 
 .about-animated {
     opacity: 1;
     transform: translateX(0);
+}
+
+.about-heading {
+    background: linear-gradient(to right, var(--primary), var(--primary-red));
+    background-clip: text;
+    color: transparent;
+    font-family: 'Amaranth', 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0 0 50px 100px;
+}
+
+.about-text {
+    
+}
+
+.about-text-list-group {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.about-text-list {
+    width: 100%;
 }

@@ -1,17 +1,19 @@
 .app-container {
     display: flex;
+    overflow-x: hidden;
 }
 
 .content-container {
     flex-grow: 1;
     padding-left: 300px;
     color: var(--light);
-    background-image: url('/src/images/home_dark.png');
+    background-image: url('/src/images/home_new.png');
     background-attachment: fixed;
-    background-position: left;
+    background-position: 150px center;
 }
 
 .sub-content-container {
-    background-image: url('/src/images/patterns/diamonds.png');
+    /* background-image: url('/src/images/patterns/diamonds.png'); */
+    /* background-color: #e6f1f6; */
     background-position: center 100vh;
 }
