@@ -48,34 +48,40 @@ nav li {
   cursor: pointer;
 }
 
-.link:hover p {
+.link i {
+  width: 25px;
+  text-align: center;
+}
+
+.link span {
+  padding-left: 14px;
+  letter-spacing: 0.8px;
+}
+
+.link:hover span {
   color: var(--light);
 }
 
 .link:hover i {
-  color: var(--primary);
+  /* color: var(--primary); */
+  background: linear-gradient(to right, var(--primary), var(--primary-red));
+  background-clip: text;
+  color: transparent;
 }
 
 .active {
   font-size: calc(var(--fs) + 2px);
 }
 
-.active p {
+.active span {
   color: var(--light);
 }
 
 .active i {
-  color: var(--primary);
-}
-
-nav i {
-  width: 25px;
-  text-align: center;
-}
-
-nav p {
-  padding-left: 14px;
-  display: inline;
+  /* color: var(--primary); */
+  background: linear-gradient(to right, var(--primary), var(--primary-red));
+  background-clip: text;
+  color: transparent;
 }
 
 .slide-right {

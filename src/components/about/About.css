@@ -1,55 +1,93 @@
-.about-container {
-    /* background-color: var(--light); */
-    /* background-image: url('/src/images/patterns/diamonds.png'); */
+.about-bg {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     padding: 100px;
 }
 
-.about-section {
+.about-container {
     background-color: #ffffff05;
     backdrop-filter: blur(10px);
-    border-radius: 100px;
+    border-radius: 80px;
     padding: 75px 100px;
-    display: flex;
-    flex-direction: column;
     font-size: 20px;
+    pointer-events: none;
 }
 
 .about-slide-left {
-    transform: translateX(400px);
     opacity: 0;
+    transform: translateX(400px);
     transition: all 1s;
 }
 
 .about-animated {
     opacity: 1;
     transform: translateX(0);
+    pointer-events: auto;
 }
 
 .about-heading {
+    /* font-family: 'Amaranth', 'Montserrat', sans-serif; */
+    width: fit-content;
+    font-size: 50px;
+    margin-bottom: 65px;
+    padding-left: 30px;
+    border-left: 10px solid;
+    border-image: linear-gradient(to bottom, var(--primary), var(--primary-red)) 1;
+    border-image-slice: 1;
+}
+
+.about-subheading {
+    font-family: 'Amaranth', 'Montserrat', sans-serif;
+    font-style: italic;
+    width: fit-content;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.about-subheading span:nth-child(2) {
     background: linear-gradient(to right, var(--primary), var(--primary-red));
     background-clip: text;
     color: transparent;
-    font-family: 'Amaranth', 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 60px;
-    margin: 0 0 50px 100px;
 }
 
 .about-text {
-    
+    letter-spacing: 1px;
+    margin-bottom: 40px;
 }
 
-.about-text-list-group {
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
+.about-link {
+    color: var(--light);
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 20px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 8px solid;
+    border-image: linear-gradient(to right, var(--primary), var(--primary-red)) 1;
+    border-image-slice: 1; */
 }
 
-.about-text-list {
+.about-link:hover {
+    color: var(--light);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.about-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -97%;
     width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--primary), var(--primary-red));
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+.about-link:hover::before {
+    left: 0;
 }

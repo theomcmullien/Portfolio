@@ -10,7 +10,7 @@ const TypeWriter = () => {
         const typingSpeed = 100;
         const deletingSpeed = 50;
         const pauseDuration = 1000;
-        const words = ['Software Developer.', 'Web Developer.', 'Team Player.', 'Problem Solver.', 'Creative Person.'];
+        const words = ['Software Developer.','Problem Solver.',  'Web Developer.', 'Team Player.', 'Fullstack Developer.', 'Creative Person.'];
         const word = words[index];
 
         const timeout = setTimeout(() => {

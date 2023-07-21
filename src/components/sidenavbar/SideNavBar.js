@@ -33,37 +33,37 @@ const SideNavBar = () => {
                 <li>
                     <Link className={activeItem === 'section1' ? 'link active' : 'link'} to="home" smooth={true} duration={0}>
                         <i className="fa-solid fa-house"></i>
-                        <p>Home</p>
+                        <span>Home</span>
                     </Link>
                 </li>
                 <li>
                     <Link className={activeItem === 'section2' ? 'link active' : 'link'} to="about" smooth={true} duration={0}>
                         <i className="fa-solid fa-user"></i>
-                        <p>About</p>
+                        <span>About</span>
                     </Link>
                 </li>
                 <li>
                     <Link className={activeItem === 'section3' ? 'link active' : 'link'} to="skills" smooth={true} duration={0}>
                         <i className="fa-solid fa-award"></i>
-                        <p>Skills</p>
+                        <span>Skills</span>
                     </Link>
                 </li>
                 <li>
                     <Link className={activeItem === 'section4' ? 'link active' : 'link'} to="education" smooth={true} duration={0}>
                         <i className="fa-solid fa-graduation-cap"></i>
-                        <p>Education</p>
+                        <span>Education</span>
                     </Link>
                 </li>
                 <li>
                     <Link className={activeItem === 'section5' ? 'link active' : 'link'} to="experience" smooth={true} duration={0}>
                         <i className="fa-solid fa-briefcase"></i>
-                        <p>Experience</p>
+                        <span>Experience</span>
                     </Link>
                 </li>
                 <li>
                     <Link className={activeItem === 'section6' ? 'link active' : 'link'} to="contact" smooth={true} duration={0}>
                         <i className="fa-solid fa-phone"></i>
-                        <p>Contact</p>
+                        <span>Contact</span>
                     </Link>
                 </li>
             </ul>
