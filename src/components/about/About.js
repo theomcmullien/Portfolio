@@ -9,7 +9,8 @@ const About = () => {
       
         if (scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 200) {
             section.classList.add('about-animated');
-        } else {
+        }
+        else {
             section.classList.remove('about-animated');
         }
     });

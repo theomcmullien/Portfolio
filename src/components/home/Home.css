@@ -40,11 +40,11 @@
     transform: scale(1.1);
 }
 
-.slide-left {
-    animation: slide-left 2.5s;
+.fade-in {
+    animation: fade-in 2.5s;
 }
 
-@keyframes slide-left {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }

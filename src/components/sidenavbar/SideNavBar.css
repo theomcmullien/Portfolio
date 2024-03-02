@@ -33,7 +33,14 @@ nav li {
 .name {
   font-family: 'Amaranth', 'Montserrat', sans-serif;
   font-size: 30px;
+  transition: all .5s;
 }
+
+/* .name:hover {
+  background: linear-gradient(to right, var(--primary), var(--primary-red));
+  background-clip: text;
+  color: transparent;
+} */
 
 .nav-footer {
   text-align: center;
