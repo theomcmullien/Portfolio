@@ -10,15 +10,16 @@ const TypeWriter = () => {
         const typingSpeed = 100;
         const deletingSpeed = 50;
         const pauseDuration = 1000;
-        const words = ['Software Developer.','Problem Solver.',  'Web Developer.', 'Team Player.', 'Fullstack Developer.', 'Creative Person.'];
+        const words = ['Software Developer.', 'Problem Solver.',  'Web Developer.', 'Team Player.', 'Fullstack Developer.', 'Creative Person.'];
         const word = words[index];
-
+        
         const timeout = setTimeout(() => {
             setText(word.substring(0, isDeleting ? text.length - 1 : text.length + 1));
 
             if (!isDeleting && text.length === word.length) {
                 setTimeout(() => setIsDeleting(true), pauseDuration);
-            } else if (isDeleting && text.length === 0) {
+            }
+            else if (isDeleting && text.length === 0) {
                 setIndex((index + 1) % words.length);
                 setIsDeleting(false);
             }

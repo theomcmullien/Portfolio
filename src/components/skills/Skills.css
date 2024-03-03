@@ -12,6 +12,8 @@
     height: 100px;
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
+    transition: all .5s;
 }
 
 .inner-box {
@@ -20,7 +22,11 @@
     background: linear-gradient(to right, var(--primary), var(--primary-red), var(--primary));
     position: absolute;
     /* transform: translateX(0px); */
-    transition: all .4s;
+    transition: all .5s;
+}
+
+.outer-box:hover {
+    border-radius: 5px;
 }
 
 .outer-box:hover .inner-box {
