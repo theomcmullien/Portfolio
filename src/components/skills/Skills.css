@@ -1,4 +1,45 @@
 .skills-container {
     /* background-color: blue; */
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-box {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner-box {
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(to right, var(--primary), var(--primary-red), var(--primary));
+    position: absolute;
+    /* transform: translateX(0px); */
+    transition: all .4s;
+}
+
+.outer-box:hover .inner-box {
+    transform: translateX(-300px);
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper p {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
 }
