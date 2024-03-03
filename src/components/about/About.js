@@ -6,7 +6,7 @@ const About = () => {
         const section = document.querySelector('.about-slide-left');
         const sectionPosition = section.offsetTop;
         const windowHeight = window.innerHeight;
-      
+        
         if (scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 200) {
             section.classList.add('about-animated');
         }
