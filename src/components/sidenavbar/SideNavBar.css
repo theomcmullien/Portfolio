@@ -16,92 +16,96 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
-  align-self: flex-start;
-  margin: 10vh 0 0 30px;
-  padding: 0;
+    list-style-type: none;
+    align-self: flex-start;
+    margin: 10vh 0 0 30px;
+    padding: 0;
 }
 
 nav li {
-  padding: 24px 0;
+    padding: 24px 0;
 }
 
 .nav-header {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .name {
-  font-family: 'Amaranth', 'Montserrat', sans-serif;
-  font-size: 30px;
-  transition: all .5s;
+    font-family: 'Amaranth', 'Montserrat', sans-serif;
+    font-size: 30px;
+    transition: all .5s;
 }
 
 /* .name:hover {
-  background: linear-gradient(to right, var(--primary), var(--primary-red));
-  background-clip: text;
-  color: transparent;
+    background: linear-gradient(to right, var(--primary), var(--primary-red));
+    background-clip: text;
+    color: transparent;
 } */
 
 .nav-footer {
-  text-align: center;
-  margin-top: auto;
-  padding-top: 15px;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 15px;
 }
 
 .link {
-  padding: 10px;
-  text-decoration: none;
-  color: var(--accent);
-  cursor: pointer;
+    text-decoration: none;
+    color: var(--accent);
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
 }
 
-.link i {
-  width: 25px;
-  text-align: center;
+.link:hover {
+    transform: scale(1.05);
 }
 
 .link span {
-  padding-left: 14px;
-  letter-spacing: 0.8px;
+    padding-left: 14px;
+    letter-spacing: 0.8px;
+    display: inline-block;
 }
 
 .link:hover span {
-  color: var(--light);
+    color: var(--light);
+}
+
+.link i {
+    width: 25px;
+    text-align: center;
 }
 
 .link:hover i {
-  /* color: var(--primary); */
-  background: linear-gradient(to right, var(--primary), var(--primary-red));
-  background-clip: text;
-  color: transparent;
+    background: linear-gradient(to right, var(--primary), var(--primary-red));
+    background-clip: text;
+    color: transparent;
 }
 
 .active {
-  font-size: calc(var(--fs) + 2px);
+    font-size: calc(var(--fs) + 2px);
 }
 
 .active span {
-  color: var(--light);
+    color: var(--light);
 }
 
 .active i {
-  /* color: var(--primary); */
-  background: linear-gradient(to right, var(--primary), var(--primary-red));
-  background-clip: text;
-  color: transparent;
+    background: linear-gradient(to right, var(--primary), var(--primary-red));
+    background-clip: text;
+    color: transparent;
 }
 
 .slide-right {
-  animation: slide-right 1s;
+    animation: slide-right 1s;
 }
 
 @keyframes slide-right {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
