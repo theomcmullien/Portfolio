@@ -1,5 +1,5 @@
 import './Home.css';
-import TypeWriter from '../../elements/typewriter/TypeWriter';
+import TypeWriter from '../../elements/type_writer/TypeWriter';
 
 const Home = () => {
     return (

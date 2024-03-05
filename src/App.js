@@ -1,6 +1,6 @@
 import './App.css';
 import { Element } from 'react-scroll';
-import SideNavBar from './components/pages/sidenavbar/SideNavBar';
+import SideNavBar from './components/pages/side_nav_bar/SideNavBar';
 import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
 import Skills from './components/pages/skills/Skills';
