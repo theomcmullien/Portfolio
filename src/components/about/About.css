@@ -1,6 +1,7 @@
 .about-bg {
     min-height: 100vh;
     padding: 100px;
+    overflow: hidden;
 }
 
 .about-container {
