@@ -1,4 +1,5 @@
-.contact-container {
-    background-color: purple;
-    height: 100vh;
+.contact-bg {
+    min-height: 100vh;
+    padding: 100px 100px 0px 100px;
+    overflow: hidden;
 }

@@ -1,4 +1,5 @@
-.education-container {
-    background-color: red;
-    height: 100vh;
+.education-bg {
+    /* min-height: 100vh; */
+    padding: 100px 100px 0px 100px;
+    overflow: hidden;
 }

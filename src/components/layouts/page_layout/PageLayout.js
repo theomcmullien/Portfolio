@@ -28,7 +28,7 @@ const PageLayout = ({ page, children }) => {
                 const scrollPosition = window.scrollY;
                 const sectionPosition = section.offsetTop;
                 const windowHeight = window.innerHeight;
-                const inPosition = scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 200;
+                const inPosition = scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 400;
                 
                 if (inPosition) section.classList.add('layout-animated');
                 else section.classList.remove('layout-animated');

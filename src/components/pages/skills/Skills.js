@@ -1,11 +1,19 @@
 import './Skills.css';
+import PageLayout from '../../layouts/page_layout/PageLayout';
 
 const Skills = () => {
     return (
         <div className="skills-bg">
-            <div className="skills-container skills-slide-right">
-                <div className="skills-heading">Skills</div>
-            </div>
+            <PageLayout page='skills'>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam quo voluptatum nesciunt, explicabo provident!</p>
+            </PageLayout>
         </div>
     );
 }
