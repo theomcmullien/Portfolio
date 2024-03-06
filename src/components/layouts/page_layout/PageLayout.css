@@ -10,23 +10,17 @@
 .about-slide, .education-slide, .contact-slide {
     opacity: 0;
     transform: translateX(400px);
-    transition: all 1s;
 }
 
 .skills-slide, .experience-slide {
     opacity: 0;
     transform: translateX(-400px);
-    transition: all 1s;
 }
 
 .layout-animated {
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
-}
-
-.transition-enabled {
-    transition: none !important;
 }
 
 .layout-heading {

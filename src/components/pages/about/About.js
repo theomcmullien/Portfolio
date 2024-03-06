@@ -15,7 +15,7 @@ const About = () => {
                     <p>Achieving team awards during my study, I have proven my ability to perform well in team-oriented projects, communicating ideas, providing critical feedback and contributing to the success of the projects.</p>
                     <p>Always willing to learn and try new ideas to further develop my skills. I am eager to start my journey of continuous learning as a Software Developer.</p>
                 </div>
-                <a href='/resume.pdf' download class="about-link">Download Resume</a>
+                <a href='/resume.pdf' download className="about-link">Download Resume</a>
             </PageLayout>
         </div>
     );
