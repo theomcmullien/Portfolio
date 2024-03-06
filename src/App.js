@@ -1,12 +1,12 @@
 import './App.css';
 import { Element } from 'react-scroll';
-import SideNavBar from './components/sidenavbar/SideNavBar';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Skills from './components/skills/Skills';
-import Education from './components/education/Education';
-import Experience from './components/experience/Experience';
-import Contact from './components/contact/Contact';
+import SideNavBar from './components/side_nav_bar/SideNavBar';
+import Home from './components/pages/home/Home';
+import About from './components/pages/about/About';
+import Skills from './components/pages/skills/Skills';
+import Education from './components/pages/education/Education';
+import Experience from './components/pages/experience/Experience';
+import Contact from './components/pages/contact/Contact';
 
 function App() {
     return (
