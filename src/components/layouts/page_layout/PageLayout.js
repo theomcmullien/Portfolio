@@ -6,41 +6,37 @@ const PageLayout = ({ page, children }) => {
     const [title, setTitle] = useState('');
 
     useEffect(() => {
+        const handleScroll = () => {
+            const section = document.querySelector(`.${slide}`);
+            const scrollPosition = window.scrollY;
+            const sectionPosition = section.offsetTop;
+            const windowHeight = window.innerHeight;
+            const inPosition = scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 400;
+            
+            if (inPosition) {
+                section.classList.add('layout-animated');
+            } else {
+                section.classList.remove('layout-animated');
+            }
+        };
+
         if (page) {
             setSlide(`${page}-slide`);
             setTitle(page[0].toUpperCase() + page.substring(1));
         }
-    }, [page]);
 
-    useEffect(() => {
         if (slide) {
             const section = document.querySelector(`.${slide}`);
             setTimeout(() => {
                 section.style.transition = 'all 1s';
             }, 100);
+            window.addEventListener('scroll', handleScroll);
         }
-    }, [slide]);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (slide) {
-                const section = document.querySelector(`.${slide}`);
-                const scrollPosition = window.scrollY;
-                const sectionPosition = section.offsetTop;
-                const windowHeight = window.innerHeight;
-                const inPosition = scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 400;
-                
-                if (inPosition) section.classList.add('layout-animated');
-                else section.classList.remove('layout-animated');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [slide]);
+    }, [page, slide]);
 
     return (
         <div className={`layout-container ${slide}`}>

@@ -1,7 +1,25 @@
 
 ~=~=~=~=~=~=~=~=~=~= TO DO =~=~=~=~=~=~=~=~=~=~
 
+- Rewrite about section content.
+
 
 ~=~=~=~=~=~=~=~=~=~= USEFUL =~=~=~=~=~=~=~=~=~=~
 
 Detect Indentation from Contents
+
+- Skills
+    C#
+    .NET Framework
+    RESTful API
+    MS SQL Server
+    JavaScript
+    HTML
+    CSS
+    React.js
+    Bootstrap
+    Flutter/Dart
+    JADE
+    DevOps
+    Source Control
+    GitHub

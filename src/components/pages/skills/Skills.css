@@ -1,7 +1,12 @@
 .skills-bg {
     /* min-height: 100vh; */
-    padding: 100px 100px 0px 100px;
+    padding: 80px 100px 0px 100px;
     overflow: hidden;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* .outer-box {
