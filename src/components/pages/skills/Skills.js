@@ -1,26 +1,51 @@
 import './Skills.css';
 import PageLayout from '../../layouts/page_layout/PageLayout';
-import Skill from '../../elements/skill/Skill';
+import { useEffect } from 'react';
 
 const Skills = () => {
+    const skills = [
+        { percent: 80, image: 'net_framework.png', name: '.NET Framework' },
+        { percent: 95, image: 'ms_sql_server.png', name: 'MS SQL Server' },
+        { percent: 90, image: 'csharp.png', name: 'C#' },
+        { percent: 85, image: 'rest_api.png', name: 'REST API' },
+        { percent: 85, image: 'javascript.png', name: 'JavaScript' },
+        { percent: 75, image: 'devops.png', name: 'DevOps' },
+        { percent: 75, image: 'react.png', name: 'React.js' },
+        { percent: 80, image: 'github.png', name: 'GitHub' },
+        { percent: 90, image: 'html.png', name: 'HTML' },
+        { percent: 75, image: 'source_control.png', name: 'Source Control' },
+        { percent: 75, image: 'css.png', name: 'CSS' },
+        { percent: 60, image: 'flutter.png', name: 'Flutter/Dart' },
+        { percent: 70, image: 'bootstrap.png', name: 'Bootstrap' },
+        { percent: 85, image: 'jade.png', name: 'JADE' }
+    ];
+
+    useEffect(() => {
+        skills.forEach((data, index) => {
+            const bar = document.getElementById(`bar-${index}`);
+            if (bar) bar.style.width = `${data.percent}%`;
+        });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     return (
-        <div className="skills-bg">
+        <div className='skills-bg'>
             <PageLayout page='skills'>
                 <div className='skills-container'>
-                    <Skill percent={100} skill="C#"></Skill>
-                    <Skill percent={100} skill=".NET Framework"></Skill>
-                    <Skill percent={100} skill="RESTful API"></Skill>
-                    <Skill percent={100} skill="MS SQL Server"></Skill>
-                    <Skill percent={100} skill="JavaScript"></Skill>
-                    <Skill percent={100} skill="HTML"></Skill>
-                    <Skill percent={100} skill="CSS"></Skill>
-                    <Skill percent={100} skill="React.js"></Skill>
-                    <Skill percent={100} skill="Bootstrap"></Skill>
-                    <Skill percent={100} skill="Flutter/Dart"></Skill>
-                    <Skill percent={100} skill="JADE"></Skill>
-                    <Skill percent={100} skill="DevOps"></Skill>
-                    <Skill percent={100} skill="Source Control"></Skill>
-                    <Skill percent={100} skill="GitHub"></Skill>
+                    {
+                        skills.map((data, index) => (
+                            <div className='skill-item'>
+                                <img className='icon' src={`images/skills_icons/${data.image}`} alt='Skill Icon' />
+                                <div className='group'>
+                                    <span className='title'>{data.name}</span>
+                                    <div className='bar' id={`bar-${index}`}>
+                                        <span className='percent-text'>{data.percent}%</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        ))
+                    }
                 </div>
             </PageLayout>
         </div>

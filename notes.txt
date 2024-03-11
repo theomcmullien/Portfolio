@@ -1,25 +1,28 @@
 
 ~=~=~=~=~=~=~=~=~=~= TO DO =~=~=~=~=~=~=~=~=~=~
 
-- Rewrite about section content.
-
+> Rewrite about section content.
+> Add message when viewport/screensize goes below certain value.
+> Pass height to PageLayout.
+> Add skill percent animation (bar & text).
+> Convert " -> '
 
 ~=~=~=~=~=~=~=~=~=~= USEFUL =~=~=~=~=~=~=~=~=~=~
 
-Detect Indentation from Contents
+>Detect Indentation from Contents
 
-- Skills
-    C#
+Skills:
     .NET Framework
-    RESTful API
     MS SQL Server
+    C#
+    REST API
     JavaScript
-    HTML
-    CSS
-    React.js
-    Bootstrap
-    Flutter/Dart
-    JADE
     DevOps
-    Source Control
+    React.js
     GitHub
+    HTML
+    Source Control
+    CSS
+    Flutter/Dart
+    Bootstrap
+    JADE

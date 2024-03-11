@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './PageLayout.css';
 
-const PageLayout = ({ page, children }) => {
+const PageLayout = ({ page, height, children }) => {
     const [slide, setSlide] = useState('');
     const [title, setTitle] = useState('');
 
@@ -11,10 +11,12 @@ const PageLayout = ({ page, children }) => {
             const scrollPosition = window.scrollY;
             const sectionPosition = section.offsetTop;
             const windowHeight = window.innerHeight;
-            const inPosition = scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 400;
+            let inPosition = scrollPosition > sectionPosition - windowHeight + 150 && scrollPosition < sectionPosition + 800;
             
+            inPosition = true; //temporary
+
             if (inPosition) {
-                section.classList.add('layout-animated');
+            section.classList.add('layout-animated');
             } else {
                 section.classList.remove('layout-animated');
             }
