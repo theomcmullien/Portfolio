@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect, useState } from 'react';
 import { Element } from 'react-scroll';
 import SideNavBar from './components/side_nav_bar/SideNavBar';
 import Home from './components/pages/home/Home';
@@ -8,8 +9,21 @@ import Education from './components/pages/education/Education';
 import Experience from './components/pages/experience/Experience';
 import Contact from './components/pages/contact/Contact';
 
-function App() {
-    return (
+const App = () => {
+    const [hide, setHide] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setHide(window.innerWidth < (1920/1.5) || window.innerHeight < (1080/1.5));
+        }
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    return hide ? (<p>You thought I made it responsive 😂</p>) : (
         <div className='app-container'>
             <SideNavBar />
             <div className='content-container'>

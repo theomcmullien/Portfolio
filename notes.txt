@@ -2,10 +2,11 @@
 ~=~=~=~=~=~=~=~=~=~= TO DO =~=~=~=~=~=~=~=~=~=~
 
 > Rewrite about section content.
-> Add message when viewport/screensize goes below certain value.
 > Pass height to PageLayout.
 > Add skill percent animation (bar & text).
 > Convert " -> '
+> Convert 'const' to 'function'
+> Animation when hovering use @keyframes
 
 ~=~=~=~=~=~=~=~=~=~= USEFUL =~=~=~=~=~=~=~=~=~=~
 
